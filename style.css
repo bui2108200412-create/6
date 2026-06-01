@@ -1,0 +1,334 @@
+/* Import font tương tự như bản gốc */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Times+New+Roman&display=swap');
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.container{
+    display: block;
+}
+
+.flyer-container {
+    width: 595px; /* Tỉ lệ chuẩn A5/A4 */
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: 'Times New Roman', serif;
+    font-size: 55px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin: 0;
+    color: #000000;
+    transform: scaleY(1.1); /* Kéo dãn font nhẹ để giống logo gốc */
+}
+
+.border-box {
+    border: 1.5px solid #a0a0a0;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.document-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #01070e; /* Màu xanh đen đặc trưng của tiêu đề */
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.product-visual {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.product-visual img {
+    max-width: 90%;
+    height: auto;
+}
+
+.text-content {
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+    color: #1a1a1a;
+    line-height: 1.4;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+.salutation {
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+/* // footer  */
+
+/* FOOTER */
+/* ... (giữ nguyên code cũ) ... */
+
+.site-footer {
+    background-color: #444444; /* Màu xám đậm theo ảnh mẫu */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif; /* Font chủ đạo của footer */
+}
+
+.contact-section {
+    margin-bottom: 50px;
+}
+
+.contact-section .region {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-section .email {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.wa-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Phần Social */
+.social-section h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.social-list {
+    list-style: none;
+    display: inline-block; /* Để căn giữa danh sách */
+    text-align: left;
+}
+
+.social-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.social-list img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Phần đáy Footer */
+/* Style riêng cho tiêu đề Contact us */
+.contact-title {
+    font-family: 'Playfair Display', serif; /* Đảm bảo dùng font có chân giống ảnh mẫu */
+    font-size: 38px;      /* Kích thước lớn nổi bật */
+    font-weight: 400;     /* Độ mảnh vừa phải, không quá đậm */
+    color: #ffffff;
+    margin-bottom: 40px;  /* Tạo khoảng cách rộng với dòng địa chỉ bên dưới */
+    letter-spacing: 1px;
+}
+
+.contact-section .region {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-section .email {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Times+New+Roman&display=swap');
+
+/* Thiết lập cơ bản để kiểm soát box-sizing */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container chính bao ngoài */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Tạo khoảng trống nhỏ ở hai bên trên mobile */
+}
+
+/* Khung nội dung chính (Flyer) */
+.flyer-container {
+    width: 100%;
+    max-width: 595px; /* Giữ chuẩn A4 trên màn hình lớn */
+    background: #ffffff;
+    padding: clamp(15px, 5vw, 30px); /* Padding linh hoạt */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+
+/* Logo co giãn theo chiều rộng màn hình */
+.logo {
+    text-align: center;
+    font-size: clamp(30px, 10vw, 55px); 
+    letter-spacing: -1px;
+    margin: 0 0 20px 0;
+    transform: scaleY(1.1);
+}
+
+/* Box viền nội dung */
+.border-box {
+    border: 1.5px solid #a0a0a0;
+    padding: clamp(15px, 4vw, 40px);
+    text-align: center;
+}
+
+/* Tiêu đề linh hoạt */
+.document-title {
+    font-size: clamp(18px, 6vw, 32px);
+    font-weight: bold;
+    color: #01070e;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+/* Hình ảnh luôn vừa khung */
+.product-visual {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-visual img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Nội dung văn bản */
+.text-content {
+    text-align: left;
+    font-size: clamp(15px, 4vw, 19px);
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+.salutation {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* FOOTER RESPONSIVE */
+.site-footer {
+    width: 100%;
+    max-width: 595px; /* Khớp với độ rộng của flyer-container */
+    background-color: #444444;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Sử dụng Grid để tự động chuyển cột trên Desktop */
+.site-footer .contact-section, 
+.site-footer .social-section {
+    margin-bottom: 30px;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 7vw, 38px);
+    margin-bottom: 20px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.social-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+.social-list img, .wa-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #666;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Tablet & Desktop: Chia Footer làm 2 bên */
+@media (min-width: 600px) {
+    .site-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    .contact-section { margin-bottom: 0; }
+    
+    .whatsapp-container {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+/* Tối ưu khi in ấn */
+@media print {
+    body { background: white; padding: 0; }
+    .flyer-container { box-shadow: none; width: 100%; }
+    .site-footer { display: block; color: black; background: white; border-top: 1px solid #ccc; }
+}
